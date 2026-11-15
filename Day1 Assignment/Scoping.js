@@ -1,53 +1,34 @@
-// 1.Const /Let Datatype - inside and outside block logic
-const browserVersion= "Chrome"
-function getBrowserVersion()
+ // 1.Const /Let Datatype - inside and outside block logic//
+ const browserVersion= "Chrome"
+ function getBrowserVersion()
 {
-    if (browserVersion= Chrome)
+     if (browserVersion == 'Chrome')
     {
-        let browserVersion= "Edge"
-        console.log("Browser version inside the block",browserVersion)
+         let browserVersion= "Edge"
+     console.log("Browser version inside the block",browserVersion)
     }
     console.log("Browser version outside the block and inside the function " , browserVersion);
-}
-getBrowserVersion()
+ }
+ getBrowserVersion()
 
-/*Output: ReferenceError: Chrome is not defined (const/ Let Datatype)*/
+/*output:Browser version inside the block Edge
+ Browser version outside the block and inside the function  Chrome*/ 
 
-
-// 2. Var Datatype = Inside block, Outside Block Logic //
-const browserVersion= 'Chrome'
-function getBrowserVersion()
-{
-    if (browserVersion= 'Chrome')
-    {
-       var browserVersion= "Edge"
-        console.log("Browser version inside the block",browserVersion)
-    }
-    console.log("Browser version outside the block and inside the function " , browserVersion);
-}
-    console.log("Browser version outside the block and outside the function " , browserVersion);
-
-getBrowserVersion()
-/* output = Browser version inside the block Edge
-           Browser version outside the block and inside the function  Edge */
-
-
-// 3. Var Datatype = Inside block, Outside Block ,outside Function
+// 2. Var Datatype = Inside block, Outside Block ,outside Function//
 
 const browserVersion= 'Chrome'
 function getBrowserVersion()
-{
-    if (browserVersion= 'Chrome')
-    {
+ {
+    if (browserVersion == 'Chrome')
+     {
        var browserVersion= "Edge"
         console.log("Browser version inside the block",browserVersion)
-    }
+   }
     console.log("Browser version outside the block and inside the function " , browserVersion);
-}
-    console.log("Browser version outside the block and outside the function " , browserVersion);
+ }
+     console.log("Browser version outside the block and outside the function " , browserVersion);
 
-getBrowserVersion()
+ getBrowserVersion()
 
-/*output: Browser version outside the block and outside the function  Chrome
-           Browser version inside the block Edge
-           Browser version outside the block and inside the function  Edge*/
+/* Output: Browser version outside the block and outside the function  Chrome
+Browser version outside the block and inside the function  undefined*/
